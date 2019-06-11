@@ -1,0 +1,21 @@
+<form class="form" (ngSubmit)="onSubmit()">
+  <h2 class="heading">Создать задачу</h2>
+  <input
+    type="text"
+    name="title"
+    [(ngModel)]="title"
+    placeholder="Заголовок задачи"
+  />
+  <input
+    type="text"
+    name="title"
+    [(ngModel)]="description"
+    placeholder="Описание задачи"
+  />
+  <br />
+  <input
+    [disabled]="!(title && description)"
+    type="submit"
+    value="Создать задачу"
+  />
+</form>

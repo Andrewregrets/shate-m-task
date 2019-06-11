@@ -1,0 +1,10 @@
+.is-completed {
+  background-color: #4fce4f;
+}
+
+.is-completed .edit-button {
+  visibility: hidden;
+}
+.is-completed .complete-button {
+  visibility: hidden;
+}

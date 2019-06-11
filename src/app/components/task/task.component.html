@@ -1,0 +1,15 @@
+<div [ngClass]="setClasses()">
+  <h3 class="task-heading">
+    {{ task.title }}
+  </h3>
+  <p>
+    {{ task.description }}
+  </p>
+  <div>
+    <button (click)="onEdit(task)" class="edit-button">Редактировать</button>
+    <button (click)="onComplete(task)" class="complete-button">
+      Выполнено
+    </button>
+    <button (click)="onDelete(task)" class="delete-button">Удалить</button>
+  </div>
+</div>
